@@ -1,13 +1,13 @@
 import React from "react";
 import './App.css';
 
-const Square = ({ value, onClick }) => (
+const SquareBox = ({ value, onClick }) => (
   <button className="square" onClick={onClick}>
     {value}
   </button>
 );
 
-const GameBoard = () => {
+const TicTacGameBoard = () => {
   const [board, setBoard] = React.useState(Array(9).fill(null));
   const [isXTurn, setIsXTurn] = React.useState(true);
 
@@ -28,4 +28,4 @@ const GameBoard = () => {
   );
 };
 
-export default GameBoard;
+export default TicTacGameBoard;
